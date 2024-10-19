@@ -1,9 +1,7 @@
 // Write your code here
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
-
 import TeamCard from '../TeamCard'
-
 import './index.css'
 
 const teamsApiUrl = 'https://apis.ccbp.in/ipl'
@@ -48,7 +46,7 @@ class Home extends Component {
 
   renderLoader = () => (
     // FIX7: For the purpose of testing here testid attribute should be added with the value "loader"
-    <div data-testid="loader" className="loader-container">
+    <div testid="loader" className="loader-container">
       <Loader type="Oval" color="#ffffff" height={50} />
     </div>
   )
